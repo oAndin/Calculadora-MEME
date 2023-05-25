@@ -1,16 +1,21 @@
 console.log("Hello World!");
 
-// let n1 = document.querySelector(".numero1");
-// console.log(".numero1");
-// let n2 = document.querySelector(".numero2");
-// console.log(".numero2");
+// let n1 = document.getElementsByClassName("numero1");
+// let n2 = document.getElementsByClassName("numero2");
 // let resultado = n1 + n2;
 
 
-// console.log(resultado)
+function soma(){ 
+    let n1 = document.getElementsByClassName("numero1");
+    let n2 = document.getElementsByClassName("numero2");
+    let resultado = n1 + n2;
+    document.getElementsByClassName("resultado")="resultado"
+    }
 
-n1 = window.prompt("Digite o primeiro número");
-n2 = window.prompt("Digite o segundo número");
-resultado = n1 + n2;
+document.getElementsByClassName("myBtn").addEventListener("click", soma());
 
-window.alert(resultado);
+// n1 = window.prompt("Digite o primeiro número");
+// n2 = window.prompt("Digite o segundo número");
+// resultado = n1 + n2;
+
+// window.alert(resultado);
