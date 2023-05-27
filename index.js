@@ -15,11 +15,14 @@ console.log("Hello World!");
 // const myBtn = document.querySelector("button");
 const myBtn = document.querySelector("button")[0];
 console.log(myBtn); 
- // get the value of an input
- // get the input
-// let n1 = document.querySelector(".numero1");
-// console.log(n1);
 
+
+
+let n1 = document.querySelector(".numero1");
+console.log(n1);
+// How to get the value of an input
+// 1º get the input
+// 2º We need to get the value with the ".value"
 const getValue1 = document.querySelector(".numero1".value);
 console.log(getValue1);
 
@@ -30,13 +33,14 @@ console.log(getValue1);
 const getValue2 = document.querySelector(".numero2".value);
 console.log(getValue2);
 
-// myBtn.addEventListener("click", clicou);
+const soma = function (){
+    value(n1) + value(n2);
+}
 
+console.log(soma)
+
+// myBtn.addEventListener("click", clicou);
 // function clicou() {
 //     console.log("Clicou");
 // }
-// n1 = window.prompt("Digite o primeiro número");
-// n2 = window.prompt("Digite o segundo número");
-// resultado = n1 + n2;
 
-// window.alert(resultado);
