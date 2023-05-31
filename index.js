@@ -1,46 +1,22 @@
 console.log("Hello World!");
 
-// let n1 = document.getElementsByClassName("numero1");
-// let n2 = document.getElementsByClassName("numero2");
-// let resultado = n1 + n2;
+// 1º step -> We need to get the input values with querySelector and store them into the Global Scope, so when we call back to use them into the function!
+
+// 2º step -> We use a Function which here we called "sum" because yes, it is the meme, which function will concatenate the two input values, bacause they are both Strings!
+
+// 3º step ->  We will use document.write to guess what, write the output into the input field aftert an eventListener from our button!
 
 
-// function soma(){ 
-//     let n1 = document.getElementById("numero1");
-//     let n2 = document.getElementById("numero2");
-//     let resultado = n1 + n2;
-//     document.getElementsByClassName("resultado")="resultado"
-//     }
+const myBtn = document.querySelector("#myBtn");
+const n1 = document.querySelector("#n1");
+const n2 = document.querySelector("#n2");
+const resultado = document.getElementById("resultado");
 
-// const myBtn = document.querySelector("button");
-const myBtn = document.querySelector("button")[0];
-console.log(myBtn); 
-
-
-
-let n1 = document.querySelector(".numero1");
-console.log(n1);
-// How to get the value of an input
-// 1º get the input
-// 2º We need to get the value with the ".value"
-const getValue1 = document.querySelector(".numero1".value);
-console.log(getValue1);
-
-
-
-// let n2 = document.querySelector(".numero2");
-// console.log(n2);
-const getValue2 = document.querySelector(".numero2".value);
-console.log(getValue2);
-
-const soma = function (){
-    value(n1) + value(n2);
-}
-
-console.log(soma)
-
-// myBtn.addEventListener("click", clicou);
-// function clicou() {
-//     console.log("Clicou");
-// }
-
+myBtn.addEventListener ("click", () => {
+    console.log("Clickou");
+    let n1 = document.querySelector("#n1").value;
+    let n2 = document.querySelector("#n2").value;
+    const resultado = n1 + n2;
+    resultado.innerHTML = document.write`${resultado}`
+    console.log(resultado);
+});
