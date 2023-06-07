@@ -43,15 +43,20 @@ body main .container .calculadora {
 body main .container .calculadora #n1 {
     width: 75%;
     height: 10%;
-    
+    padding: 5px 5px;
 }
 body main .container .calculadora #n2 {
     width: 75%;
     height: 10%;
+    padding: 5px 5px;
 }
 body main .container .calculadora #resultado {
     width: 75%;
     height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
 }
 
 /* Botão do gleidson */
